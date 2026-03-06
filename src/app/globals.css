@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 18, 18, 18;
+  --background-rgb: 249, 247, 242;
+}
+
+@theme{
+  --color-luxury-gold: #C5A059;
+  --color-luxury-charcoal: #333333;
+  --color-luxury-cream: #F9F7F2;
+  --color-luxury-silver:#E5E5E5;
+
+  --font-serif: var(--font-playfair),serif;
+  --font-sans: var(--font-inter);
+  --letter-spacing-ultra: 0.2em;
+
+}
+@layer base {
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-rgb));
+  }
+}
+
+/* Custom Cursor or Smooth Reveal Animations */
+.reveal {
+  animation: reveal 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes reveal {
+  0% { transform: translateY(100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+::selection {
+  background-color: #C5A059;
+  color: white;
+}
