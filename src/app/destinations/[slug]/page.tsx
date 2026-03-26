@@ -1,5 +1,26 @@
 import React from "react";
 
+export async function generateStaticParams() {
+  return [
+    { slug: "pondicherry" },
+    { slug: "thanjavur" },
+    { slug: "mumbai" },
+    { slug: "rajasthan" },
+    { slug: "chennai" },
+    { slug: "ooty" },
+    { slug: "madurai" },
+    { slug: "jaisalmer" },
+    { slug: "goa" },
+    { slug: "kanchipuram" },
+    { slug: "darjeeling" },
+    { slug: "kodaikanal" },
+    { slug: "hampi" },
+    { slug: "joshpur" },
+    { slug: "alleppey" },
+    { slug: "karnataka-museum" }
+  ];
+}
+
 const getDestinationData = (slug: string) => {
   const data: Record<string, any> = {
     "pondicherry": {
