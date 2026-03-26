@@ -2,6 +2,10 @@
 
 Travel Explorer is a travel guide web application that helps users explore popular tourist destinations across India. The application displays information about places, travel details, and estimated tour prices.
 
+## Live Demo
+
+https://travel-explorer-nextjs-nbamkbvvx-sharmiladevelopers-projects.vercel.app/
+
 ## Features
 
 * Explore famous tourist places in India
